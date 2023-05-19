@@ -1,6 +1,6 @@
 import { attr } from "@microsoft/fast-element";
 import {
-    Button as FoundationButton,
+    Button,
     buttonTemplate as template,
 } from "@microsoft/fast-foundation";
 import { buttonStyles as styles } from "./button.styles.js";
@@ -19,7 +19,7 @@ export type ButtonAppearance =
 /**
  * @tagname %%prefix%%-button
  */
-export class Button extends FoundationButton {
+export class ButtonTwo extends Button {
     /**
      * The appearance the button should have.
      *
@@ -59,9 +59,9 @@ export class Button extends FoundationButton {
  *
  * {@link https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot/delegatesFocus | delegatesFocus}
  */
-export const fastButton = Button.compose({
+export const fastButton = ButtonTwo.compose({
     baseName: "button",
-    baseClass: FoundationButton,
+    baseClass: Button,
     template,
     styles,
     shadowOptions: {

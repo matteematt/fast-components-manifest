@@ -3097,6 +3097,102 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/accordion-item/accordion-item.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/accordion-item/accordion-item.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion-item/accordion-item.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "accordionItemStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for AccordionItem",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "accordionItemStyles",
+          "declaration": {
+            "name": "accordionItemStyles",
+            "module": "src/accordion-item/accordion-item.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion-item/accordion-item.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/accordion-item/accordion-item.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion-item/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastAccordionItem",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#AccordionItem} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#accordionItemTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastAccordionItem",
+          "declaration": {
+            "name": "fastAccordionItem",
+            "module": "src/accordion-item/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "AccordionItem",
+          "declaration": {
+            "name": "AccordionItem",
+            "module": "src/accordion-item/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "accordionItemStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/accordion-item/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/accordion/accordion.open-ui.definition.ts",
       "declarations": [],
       "exports": [
@@ -3222,102 +3318,6 @@
           "declaration": {
             "name": "styles",
             "module": "src/accordion/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion-item/accordion-item.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/accordion-item/accordion-item.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion-item/accordion-item.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "accordionItemStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for AccordionItem",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "accordionItemStyles",
-          "declaration": {
-            "name": "accordionItemStyles",
-            "module": "src/accordion-item/accordion-item.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion-item/accordion-item.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/accordion-item/accordion-item.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion-item/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastAccordionItem",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#AccordionItem} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#accordionItemTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastAccordionItem",
-          "declaration": {
-            "name": "fastAccordionItem",
-            "module": "src/accordion-item/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "AccordionItem",
-          "declaration": {
-            "name": "AccordionItem",
-            "module": "src/accordion-item/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "accordionItemStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/accordion-item/index.ts"
           }
         }
       ]
@@ -4501,7 +4501,7 @@
         {
           "kind": "class",
           "description": "",
-          "name": "Button",
+          "name": "ButtonTwo",
           "members": [
             {
               "kind": "field",
@@ -4531,6 +4531,382 @@
                 }
               ],
               "description": "Applies 'icon-only' class when there is only an SVG in the default slot"
+            },
+            {
+              "kind": "field",
+              "name": "autofocus",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "description": "Determines if the element should receive document focus on page load.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formId",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "The id of a form to associate the element to.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formaction",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "formactionChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formenctype",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "formenctypeChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formmethod",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "formmethodChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formnovalidate",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "formnovalidateChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formtarget",
+              "type": {
+                "text": "\"_self\" | \"_blank\" | \"_parent\" | \"_top\""
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "formtargetChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "\"submit\" | \"reset\" | \"button\""
+              },
+              "privacy": "public",
+              "description": "The button type.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "typeChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "previous",
+                  "type": {
+                    "text": "\"submit\" | \"reset\" | \"button\" | void"
+                  }
+                },
+                {
+                  "name": "next",
+                  "type": {
+                    "text": "\"submit\" | \"reset\" | \"button\""
+                  }
+                }
+              ],
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "defaultSlottedContent",
+              "type": {
+                "text": "HTMLElement[]"
+              },
+              "privacy": "public",
+              "description": "\nDefault slotted content",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "handleSubmission",
+              "privacy": "private",
+              "description": "Submits the parent form",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "handleFormReset",
+              "privacy": "private",
+              "description": "Resets the parent form",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "control",
+              "type": {
+                "text": "HTMLButtonElement"
+              },
+              "privacy": "public",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "handleUnsupportedDelegatesFocus",
+              "privacy": "private",
+              "description": "Overrides the focus call for where delegatesFocus is unsupported.\nThis check works for Chrome, Edge Chromium, FireFox, and Safari\nRelevant PR on the Firefox browser: https://phabricator.services.mozilla.com/D123858",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "proxy",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "_presentation",
+              "type": {
+                "text": "ComponentPresentation | null | undefined"
+              },
+              "privacy": "private",
+              "default": "void 0",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "$presentation",
+              "type": {
+                "text": "ComponentPresentation | null"
+              },
+              "privacy": "public",
+              "description": "A property which resolves the ComponentPresentation instance\nfor the current component.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "template",
+              "type": {
+                "text": "ElementViewTemplate | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the template of the element instance. When undefined,\nthe element will attempt to resolve the template from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "templateChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "styles",
+              "type": {
+                "text": "ElementStyles | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the default styles for the element instance. When undefined,\nthe element will attempt to resolve default styles from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "stylesChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "compose",
+              "privacy": "public",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "(\n        overrideDefinition?: OverrideFoundationElementDefinition<T>\n    ) => FoundationElementRegistry<T, K>"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "this",
+                  "type": {
+                    "text": "K"
+                  }
+                },
+                {
+                  "name": "elementDefinition",
+                  "type": {
+                    "text": "T"
+                  },
+                  "description": "The definition of the element to create the registry\nfunction for."
+                }
+              ],
+              "description": "Defines an element registry function with a set of element definition defaults.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
             }
           ],
           "attributes": [
@@ -4542,10 +4918,93 @@
               "default": "\"neutral\"",
               "description": "The appearance the button should have.",
               "fieldName": "appearance"
+            },
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Determines if the element should receive document focus on page load.",
+              "fieldName": "autofocus",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "form",
+              "type": {
+                "text": "string"
+              },
+              "description": "The id of a form to associate the element to.",
+              "fieldName": "formId",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "formaction",
+              "type": {
+                "text": "string"
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
+              "fieldName": "formaction",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "formenctype",
+              "type": {
+                "text": "string"
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
+              "fieldName": "formenctype",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "formmethod",
+              "type": {
+                "text": "string"
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
+              "fieldName": "formmethod",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "formtarget",
+              "type": {
+                "text": "\"_self\" | \"_blank\" | \"_parent\" | \"_top\""
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
+              "fieldName": "formtarget",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "type",
+              "type": {
+                "text": "\"submit\" | \"reset\" | \"button\""
+              },
+              "description": "The button type.",
+              "fieldName": "type",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
             }
           ],
           "superclass": {
-            "name": "FoundationButton",
+            "name": "Button",
             "package": "@microsoft/fast-foundation"
           },
           "tagName": "%%prefix%%-button",
@@ -4561,9 +5020,9 @@
       "exports": [
         {
           "kind": "js",
-          "name": "Button",
+          "name": "ButtonTwo",
           "declaration": {
-            "name": "Button",
+            "name": "ButtonTwo",
             "module": "src/button/index.ts"
           }
         },
@@ -6433,251 +6892,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/menu/index.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "Menu",
-          "superclass": {
-            "name": "FoundationMenu",
-            "package": "@microsoft/fast-foundation"
-          },
-          "members": [
-            {
-              "kind": "field",
-              "name": "_presentation",
-              "type": {
-                "text": "ComponentPresentation | null | undefined"
-              },
-              "privacy": "private",
-              "default": "void 0",
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "$presentation",
-              "type": {
-                "text": "ComponentPresentation | null"
-              },
-              "privacy": "public",
-              "description": "A property which resolves the ComponentPresentation instance\nfor the current component.",
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "template",
-              "type": {
-                "text": "ElementViewTemplate | void | null"
-              },
-              "privacy": "public",
-              "description": "Sets the template of the element instance. When undefined,\nthe element will attempt to resolve the template from\nthe associated presentation or custom element definition.",
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "templateChanged",
-              "privacy": "protected",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "styles",
-              "type": {
-                "text": "ElementStyles | void | null"
-              },
-              "privacy": "public",
-              "description": "Sets the default styles for the element instance. When undefined,\nthe element will attempt to resolve default styles from\nthe associated presentation or custom element definition.",
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "stylesChanged",
-              "privacy": "protected",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "compose",
-              "privacy": "public",
-              "static": true,
-              "return": {
-                "type": {
-                  "text": "(\n        overrideDefinition?: OverrideFoundationElementDefinition<T>\n    ) => FoundationElementRegistry<T, K>"
-                }
-              },
-              "parameters": [
-                {
-                  "name": "this",
-                  "type": {
-                    "text": "K"
-                  }
-                },
-                {
-                  "name": "elementDefinition",
-                  "type": {
-                    "text": "T"
-                  },
-                  "description": "The definition of the element to create the registry\nfunction for."
-                }
-              ],
-              "description": "Defines an element registry function with a set of element definition defaults.",
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "variable",
-          "name": "fastMenu",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#Menu} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#menuTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Menu",
-          "declaration": {
-            "name": "Menu",
-            "module": "src/menu/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "fastMenu",
-          "declaration": {
-            "name": "fastMenu",
-            "module": "src/menu/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "menuStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/menu/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/menu/menu.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/menu/menu.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/menu/menu.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "Menu"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/menu/menu.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Menu",
-          "declaration": {
-            "name": "Menu",
-            "module": "src/menu/menu.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/menu/menu.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "menuStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Menu",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "menuStyles",
-          "declaration": {
-            "name": "menuStyles",
-            "module": "src/menu/menu.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/menu/menu.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/menu/menu.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/listbox-option/index.ts",
       "declarations": [
         {
@@ -6931,6 +7145,251 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/menu/index.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Menu",
+          "superclass": {
+            "name": "FoundationMenu",
+            "package": "@microsoft/fast-foundation"
+          },
+          "members": [
+            {
+              "kind": "field",
+              "name": "_presentation",
+              "type": {
+                "text": "ComponentPresentation | null | undefined"
+              },
+              "privacy": "private",
+              "default": "void 0",
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "$presentation",
+              "type": {
+                "text": "ComponentPresentation | null"
+              },
+              "privacy": "public",
+              "description": "A property which resolves the ComponentPresentation instance\nfor the current component.",
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "template",
+              "type": {
+                "text": "ElementViewTemplate | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the template of the element instance. When undefined,\nthe element will attempt to resolve the template from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "templateChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "styles",
+              "type": {
+                "text": "ElementStyles | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the default styles for the element instance. When undefined,\nthe element will attempt to resolve default styles from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "stylesChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "compose",
+              "privacy": "public",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "(\n        overrideDefinition?: OverrideFoundationElementDefinition<T>\n    ) => FoundationElementRegistry<T, K>"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "this",
+                  "type": {
+                    "text": "K"
+                  }
+                },
+                {
+                  "name": "elementDefinition",
+                  "type": {
+                    "text": "T"
+                  },
+                  "description": "The definition of the element to create the registry\nfunction for."
+                }
+              ],
+              "description": "Defines an element registry function with a set of element definition defaults.",
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "variable",
+          "name": "fastMenu",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#Menu} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#menuTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Menu",
+          "declaration": {
+            "name": "Menu",
+            "module": "src/menu/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "fastMenu",
+          "declaration": {
+            "name": "fastMenu",
+            "module": "src/menu/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "menuStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/menu/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/menu/menu.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/menu/menu.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/menu/menu.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Menu"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/menu/menu.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Menu",
+          "declaration": {
+            "name": "Menu",
+            "module": "src/menu/menu.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/menu/menu.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "menuStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Menu",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "menuStyles",
+          "declaration": {
+            "name": "menuStyles",
+            "module": "src/menu/menu.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/menu/menu.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/menu/menu.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/number-field/index.ts",
       "declarations": [
         {
@@ -7040,6 +7499,129 @@
           "name": "default",
           "declaration": {
             "module": "src/number-field/number-field.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/progress-ring/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastProgressRing",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#BaseProgress} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#progressRingTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastProgressRing",
+          "declaration": {
+            "name": "fastProgressRing",
+            "module": "src/progress-ring/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "ProgressRing",
+          "declaration": {
+            "name": "ProgressRing",
+            "module": "src/progress-ring/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "progressRingStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/progress-ring/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/progress-ring/progress-ring.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/progress-ring/progress-ring.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/progress-ring/progress-ring.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "ProgressRing"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/progress-ring/progress-ring.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "ProgressRing",
+          "declaration": {
+            "name": "ProgressRing",
+            "module": "src/progress-ring/progress-ring.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/progress-ring/progress-ring.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "progressRingStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Progress Ring",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "progressRingStyles",
+          "declaration": {
+            "name": "progressRingStyles",
+            "module": "src/progress-ring/progress-ring.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/progress-ring/progress-ring.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/progress-ring/progress-ring.vscode.definition.ts"
           }
         }
       ]
@@ -7729,129 +8311,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/progress-ring/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastProgressRing",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#BaseProgress} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#progressRingTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastProgressRing",
-          "declaration": {
-            "name": "fastProgressRing",
-            "module": "src/progress-ring/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "ProgressRing",
-          "declaration": {
-            "name": "ProgressRing",
-            "module": "src/progress-ring/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "progressRingStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/progress-ring/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/progress-ring/progress-ring.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/progress-ring/progress-ring.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/progress-ring/progress-ring.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "ProgressRing"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/progress-ring/progress-ring.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "ProgressRing",
-          "declaration": {
-            "name": "ProgressRing",
-            "module": "src/progress-ring/progress-ring.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/progress-ring/progress-ring.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "progressRingStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Progress Ring",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "progressRingStyles",
-          "declaration": {
-            "name": "progressRingStyles",
-            "module": "src/progress-ring/progress-ring.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/progress-ring/progress-ring.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/progress-ring/progress-ring.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/radio/index.ts",
       "declarations": [
         {
@@ -8380,129 +8839,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/slider/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastSlider",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#Slider} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#sliderTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastSlider",
-          "declaration": {
-            "name": "fastSlider",
-            "module": "src/slider/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Slider",
-          "declaration": {
-            "name": "Slider",
-            "module": "src/slider/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "sliderStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/slider/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/slider/slider.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "Slider"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/slider/slider.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Slider",
-          "declaration": {
-            "name": "Slider",
-            "module": "src/slider/slider.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "sliderStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Slider",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "sliderStyles",
-          "declaration": {
-            "name": "sliderStyles",
-            "module": "src/slider/slider.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/slider/slider.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/skeleton/index.ts",
       "declarations": [
         {
@@ -8620,6 +8956,129 @@
           "name": "default",
           "declaration": {
             "module": "src/skeleton/skeleton.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastSlider",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#Slider} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#sliderTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastSlider",
+          "declaration": {
+            "name": "fastSlider",
+            "module": "src/slider/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Slider",
+          "declaration": {
+            "name": "Slider",
+            "module": "src/slider/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "sliderStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/slider/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/slider/slider.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Slider"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/slider/slider.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Slider",
+          "declaration": {
+            "name": "Slider",
+            "module": "src/slider/slider.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "sliderStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Slider",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "sliderStyles",
+          "declaration": {
+            "name": "sliderStyles",
+            "module": "src/slider/slider.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/slider/slider.vscode.definition.ts"
           }
         }
       ]
@@ -9056,102 +9515,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/tab-panel/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastTabPanel",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#TabPanel} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#tabPanelTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastTabPanel",
-          "declaration": {
-            "name": "fastTabPanel",
-            "module": "src/tab-panel/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "TabPanel",
-          "declaration": {
-            "name": "TabPanel",
-            "module": "src/tab-panel/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "tabPanelStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/tab-panel/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tab-panel/tab-panel.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/tab-panel/tab-panel.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tab-panel/tab-panel.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "tabPanelStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Tab Panel",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "tabPanelStyles",
-          "declaration": {
-            "name": "tabPanelStyles",
-            "module": "src/tab-panel/tab-panel.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tab-panel/tab-panel.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/tab-panel/tab-panel.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/tab/index.ts",
       "declarations": [
         {
@@ -9242,6 +9605,102 @@
           "name": "default",
           "declaration": {
             "module": "src/tab/tab.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tab-panel/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastTabPanel",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#TabPanel} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#tabPanelTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastTabPanel",
+          "declaration": {
+            "name": "fastTabPanel",
+            "module": "src/tab-panel/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "TabPanel",
+          "declaration": {
+            "name": "TabPanel",
+            "module": "src/tab-panel/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "tabPanelStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/tab-panel/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tab-panel/tab-panel.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/tab-panel/tab-panel.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tab-panel/tab-panel.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "tabPanelStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Tab Panel",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "tabPanelStyles",
+          "declaration": {
+            "name": "tabPanelStyles",
+            "module": "src/tab-panel/tab-panel.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tab-panel/tab-panel.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/tab-panel/tab-panel.vscode.definition.ts"
           }
         }
       ]
@@ -9999,6 +10458,44 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/utilities/behaviors.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "appearanceBehavior",
+          "parameters": [
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "description": "The value of the appearance property"
+            },
+            {
+              "name": "styles",
+              "type": {
+                "text": "ElementStyles"
+              },
+              "description": "The styles to be applied when condition matches"
+            }
+          ],
+          "description": "Behavior that will conditionally apply a stylesheet based on the elements\nappearance property",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "appearanceBehavior",
+          "declaration": {
+            "name": "appearanceBehavior",
+            "module": "src/utilities/behaviors.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/tree-view/index.ts",
       "declarations": [
         {
@@ -10116,44 +10613,6 @@
           "name": "default",
           "declaration": {
             "module": "src/tree-view/tree-view.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/utilities/behaviors.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "appearanceBehavior",
-          "parameters": [
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "description": "The value of the appearance property"
-            },
-            {
-              "name": "styles",
-              "type": {
-                "text": "ElementStyles"
-              },
-              "description": "The styles to be applied when condition matches"
-            }
-          ],
-          "description": "Behavior that will conditionally apply a stylesheet based on the elements\nappearance property",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "appearanceBehavior",
-          "declaration": {
-            "name": "appearanceBehavior",
-            "module": "src/utilities/behaviors.ts"
           }
         }
       ]
