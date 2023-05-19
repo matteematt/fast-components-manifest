@@ -17,7 +17,7 @@ export type ButtonAppearance =
     | "stealth";
 
 /**
- * @internal
+ * @tagname %%prefix%%-button
  */
 export class Button extends FoundationButton {
     /**

@@ -26,7 +26,8 @@
     "build:pw": "yarn build:pw-tests && yarn build:pw-fixtures",
     "build:rollup": "rollup -c",
     "build:tsc": "tsc -p ./tsconfig.json",
-    "build": "yarn build:tsc && yarn generate-open-ui-definition && yarn build:rollup && yarn doc",
+    "build": "yarn build:tsc && yarn generate-open-ui-definition && yarn build:rollup && yarn doc && yarn cem:analyze",
+    "cem:analyze": "cem analyze --config custom-elements-manifest.config.js",
     "clean:dist": "node ../../../build/clean.js dist",
     "clean:test": "node ../../../build/clean.js __test__/dist __test__/public",
     "dev": "tsc -p ./tsconfig.json -w",
@@ -60,6 +61,7 @@
     "test": "yarn eslint && yarn test-chrome:verbose && yarn validate-component-definitions && yarn doc:ci"
   },
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.8.2",
     "@microsoft/api-extractor": "7.23.1",
     "@storybook/addons": "6.3.3",
     "@storybook/html": "6.3.3",
@@ -117,5 +119,6 @@
     "@microsoft/fast-foundation": "^2.46.2",
     "@microsoft/fast-web-utilities": "^5.4.1",
     "tslib": "^1.13.0"
-  }
+  },
+  "customElements": "dist/custom-elements.json"
 }
