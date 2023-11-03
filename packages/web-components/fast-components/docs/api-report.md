@@ -600,13 +600,9 @@ export const breadcrumbItemStyles: FoundationElementTemplate<ElementStyles, Brea
 // @public
 export const breadcrumbStyles: FoundationElementTemplate<ElementStyles>;
 
-// Warning: (ae-internal-missing-underscore) The name "Button" should be prefixed with an underscore because the declaration is marked as @internal
-//
-// @internal (undocumented)
+// @public
 export class Button extends Button_2 {
-    // @public
     appearance: ButtonAppearance;
-    // @public
     defaultSlottedContentChanged(oldValue: any, newValue: any): void;
 }
 
@@ -873,8 +869,6 @@ styles: FoundationElementTemplate<ElementStyles, FoundationElementDefinition>;
 // @public
 export const fastBreadcrumbItem: (overrideDefinition?: OverrideFoundationElementDefinition<BreadcrumbItemOptions> | undefined) => FoundationElementRegistry<BreadcrumbItemOptions, Constructable<FoundationElement>>;
 
-// Warning: (ae-incompatible-release-tags) The symbol "fastButton" is marked as @public, but its signature references "Button" which is marked as @internal
-//
 // @public
 export const fastButton: (overrideDefinition?: OverrideFoundationElementDefinition<    {
 baseName: string;
@@ -1926,7 +1920,6 @@ export const verticalSliderLabelStyles: ElementStyles;
 //
 // dist/dts/color/palette.d.ts:48:5 - (ae-forgotten-export) The symbol "create" needs to be exported by the entry point index.d.ts
 // dist/dts/color/palette.d.ts:49:5 - (ae-forgotten-export) The symbol "from" needs to be exported by the entry point index.d.ts
-// dist/dts/custom-elements.d.ts:126:5 - (ae-incompatible-release-tags) The symbol "fastButton" is marked as @public, but its signature references "Button" which is marked as @internal
 // dist/dts/custom-elements.d.ts:154:5 - (ae-incompatible-release-tags) The symbol "fastCard" is marked as @public, but its signature references "Card" which is marked as @internal
 // dist/dts/custom-elements.d.ts:194:5 - (ae-incompatible-release-tags) The symbol "fastDesignSystemProvider" is marked as @public, but its signature references "DesignSystemProvider" which is marked as @internal
 // dist/dts/custom-elements.d.ts:204:5 - (ae-incompatible-release-tags) The symbol "fastDisclosure" is marked as @public, but its signature references "Disclosure" which is marked as @internal

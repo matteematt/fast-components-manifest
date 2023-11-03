@@ -3097,233 +3097,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/accordion-item/accordion-item.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/accordion-item/accordion-item.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion-item/accordion-item.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "accordionItemStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for AccordionItem",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "accordionItemStyles",
-          "declaration": {
-            "name": "accordionItemStyles",
-            "module": "src/accordion-item/accordion-item.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion-item/accordion-item.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/accordion-item/accordion-item.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion-item/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastAccordionItem",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#AccordionItem} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#accordionItemTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastAccordionItem",
-          "declaration": {
-            "name": "fastAccordionItem",
-            "module": "src/accordion-item/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "AccordionItem",
-          "declaration": {
-            "name": "AccordionItem",
-            "module": "src/accordion-item/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "accordionItemStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/accordion-item/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion/accordion.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/accordion/accordion.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion/accordion.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "Accordion"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/accordion/accordion.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Accordion",
-          "declaration": {
-            "name": "Accordion",
-            "module": "src/accordion/accordion.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion/accordion.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "accordionStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Accordion",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "accordionStyles",
-          "declaration": {
-            "name": "accordionStyles",
-            "module": "src/accordion/accordion.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion/accordion.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/accordion/accordion.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/accordion/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastAccordion",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#Accordion} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#accordionTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "*",
-          "declaration": {
-            "name": "*",
-            "package": "\"../accordion-item/index.js\""
-          }
-        },
-        {
-          "kind": "js",
-          "name": "fastAccordion",
-          "declaration": {
-            "name": "fastAccordion",
-            "module": "src/accordion/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Accordion",
-          "declaration": {
-            "name": "Accordion",
-            "module": "src/accordion/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "accordionStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/accordion/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/anchor/anchor.open-ui.definition.ts",
       "declarations": [],
       "exports": [
@@ -3618,6 +3391,233 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/accordion/accordion.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/accordion/accordion.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion/accordion.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Accordion"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/accordion/accordion.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Accordion",
+          "declaration": {
+            "name": "Accordion",
+            "module": "src/accordion/accordion.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion/accordion.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "accordionStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Accordion",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "accordionStyles",
+          "declaration": {
+            "name": "accordionStyles",
+            "module": "src/accordion/accordion.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion/accordion.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/accordion/accordion.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastAccordion",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#Accordion} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#accordionTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "\"../accordion-item/index.js\""
+          }
+        },
+        {
+          "kind": "js",
+          "name": "fastAccordion",
+          "declaration": {
+            "name": "fastAccordion",
+            "module": "src/accordion/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Accordion",
+          "declaration": {
+            "name": "Accordion",
+            "module": "src/accordion/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "accordionStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/accordion/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion-item/accordion-item.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/accordion-item/accordion-item.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion-item/accordion-item.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "accordionItemStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for AccordionItem",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "accordionItemStyles",
+          "declaration": {
+            "name": "accordionItemStyles",
+            "module": "src/accordion-item/accordion-item.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion-item/accordion-item.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/accordion-item/accordion-item.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/accordion-item/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastAccordionItem",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#AccordionItem} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#accordionItemTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastAccordionItem",
+          "declaration": {
+            "name": "fastAccordionItem",
+            "module": "src/accordion-item/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "AccordionItem",
+          "declaration": {
+            "name": "AccordionItem",
+            "module": "src/accordion-item/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "accordionItemStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/accordion-item/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/anchored-region/anchored-region.open-ui.definition.ts",
       "declarations": [],
       "exports": [
@@ -3734,6 +3734,129 @@
           "declaration": {
             "name": "styles",
             "module": "src/anchored-region/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/badge/badge.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/badge/badge.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/badge/badge.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Badge"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/badge/badge.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Badge",
+          "declaration": {
+            "name": "Badge",
+            "module": "src/badge/badge.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/badge/badge.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "badgeStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Badge",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "badgeStyles",
+          "declaration": {
+            "name": "badgeStyles",
+            "module": "src/badge/badge.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/badge/badge.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/badge/badge.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/badge/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastBadge",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#Badge} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#badgeTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastBadge",
+          "declaration": {
+            "name": "fastBadge",
+            "module": "src/badge/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Badge",
+          "declaration": {
+            "name": "Badge",
+            "module": "src/badge/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "badgeStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/badge/index.ts"
           }
         }
       ]
@@ -4036,25 +4159,25 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/badge/badge.open-ui.definition.ts",
+      "path": "src/breadcrumb-item/breadcrumb-item.open-ui.definition.ts",
       "declarations": [],
       "exports": [
         {
           "kind": "js",
           "name": "default",
           "declaration": {
-            "module": "src/badge/badge.open-ui.definition.ts"
+            "module": "src/breadcrumb-item/breadcrumb-item.open-ui.definition.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/badge/badge.stories.ts",
+      "path": "src/breadcrumb-item/breadcrumb-item.stories.ts",
       "declarations": [
         {
           "kind": "function",
-          "name": "Badge"
+          "name": "BreadcrumbItem"
         }
       ],
       "exports": [
@@ -4062,26 +4185,26 @@
           "kind": "js",
           "name": "default",
           "declaration": {
-            "module": "src/badge/badge.stories.ts"
+            "module": "src/breadcrumb-item/breadcrumb-item.stories.ts"
           }
         },
         {
           "kind": "js",
-          "name": "Badge",
+          "name": "BreadcrumbItem",
           "declaration": {
-            "name": "Badge",
-            "module": "src/badge/badge.stories.ts"
+            "name": "BreadcrumbItem",
+            "module": "src/breadcrumb-item/breadcrumb-item.stories.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/badge/badge.styles.ts",
+      "path": "src/breadcrumb-item/breadcrumb-item.styles.ts",
       "declarations": [
         {
           "kind": "function",
-          "name": "badgeStyles",
+          "name": "breadcrumbItemStyles",
           "parameters": [
             {
               "name": "context"
@@ -4090,69 +4213,69 @@
               "name": "definition"
             }
           ],
-          "description": "Styles for Badge",
+          "description": "Styles for Breadcrumb item",
           "privacy": "public"
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "badgeStyles",
+          "name": "breadcrumbItemStyles",
           "declaration": {
-            "name": "badgeStyles",
-            "module": "src/badge/badge.styles.ts"
+            "name": "breadcrumbItemStyles",
+            "module": "src/breadcrumb-item/breadcrumb-item.styles.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/badge/badge.vscode.definition.ts",
+      "path": "src/breadcrumb-item/breadcrumb-item.vscode.definition.ts",
       "declarations": [],
       "exports": [
         {
           "kind": "js",
           "name": "default",
           "declaration": {
-            "module": "src/badge/badge.vscode.definition.ts"
+            "module": "src/breadcrumb-item/breadcrumb-item.vscode.definition.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/badge/index.ts",
+      "path": "src/breadcrumb-item/index.ts",
       "declarations": [
         {
           "kind": "variable",
-          "name": "fastBadge",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#Badge} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#badgeTemplate}",
+          "name": "fastBreadcrumbItem",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#BreadcrumbItem} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#breadcrumbItemTemplate}",
           "privacy": "public"
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "fastBadge",
+          "name": "fastBreadcrumbItem",
           "declaration": {
-            "name": "fastBadge",
-            "module": "src/badge/index.ts"
+            "name": "fastBreadcrumbItem",
+            "module": "src/breadcrumb-item/index.ts"
           }
         },
         {
           "kind": "js",
-          "name": "Badge",
+          "name": "BreadcrumbItem",
           "declaration": {
-            "name": "Badge",
-            "module": "src/badge/index.ts"
+            "name": "BreadcrumbItem",
+            "module": "src/breadcrumb-item/index.ts"
           }
         },
         {
           "kind": "js",
-          "name": "badgeStyles",
+          "name": "breadcrumbItemStyles",
           "declaration": {
             "name": "styles",
-            "module": "src/badge/index.ts"
+            "module": "src/breadcrumb-item/index.ts"
           }
         }
       ]
@@ -4282,129 +4405,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/breadcrumb-item/breadcrumb-item.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/breadcrumb-item/breadcrumb-item.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/breadcrumb-item/breadcrumb-item.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "BreadcrumbItem"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/breadcrumb-item/breadcrumb-item.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "BreadcrumbItem",
-          "declaration": {
-            "name": "BreadcrumbItem",
-            "module": "src/breadcrumb-item/breadcrumb-item.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/breadcrumb-item/breadcrumb-item.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "breadcrumbItemStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Breadcrumb item",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "breadcrumbItemStyles",
-          "declaration": {
-            "name": "breadcrumbItemStyles",
-            "module": "src/breadcrumb-item/breadcrumb-item.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/breadcrumb-item/breadcrumb-item.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/breadcrumb-item/breadcrumb-item.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/breadcrumb-item/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastBreadcrumbItem",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#BreadcrumbItem} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#breadcrumbItemTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastBreadcrumbItem",
-          "declaration": {
-            "name": "fastBreadcrumbItem",
-            "module": "src/breadcrumb-item/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "BreadcrumbItem",
-          "declaration": {
-            "name": "BreadcrumbItem",
-            "module": "src/breadcrumb-item/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "breadcrumbItemStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/breadcrumb-item/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/button/button.open-ui.definition.ts",
       "declarations": [],
       "exports": [
@@ -4501,7 +4501,7 @@
         {
           "kind": "class",
           "description": "",
-          "name": "ButtonTwo",
+          "name": "Button",
           "members": [
             {
               "kind": "field",
@@ -4531,382 +4531,6 @@
                 }
               ],
               "description": "Applies 'icon-only' class when there is only an SVG in the default slot"
-            },
-            {
-              "kind": "field",
-              "name": "autofocus",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "public",
-              "description": "Determines if the element should receive document focus on page load.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "formId",
-              "type": {
-                "text": "string"
-              },
-              "privacy": "public",
-              "description": "The id of a form to associate the element to.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "formaction",
-              "type": {
-                "text": "string"
-              },
-              "privacy": "public",
-              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "formactionChanged",
-              "privacy": "private",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "formenctype",
-              "type": {
-                "text": "string"
-              },
-              "privacy": "public",
-              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "formenctypeChanged",
-              "privacy": "private",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "formmethod",
-              "type": {
-                "text": "string"
-              },
-              "privacy": "public",
-              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "formmethodChanged",
-              "privacy": "private",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "formnovalidate",
-              "type": {
-                "text": "boolean"
-              },
-              "privacy": "public",
-              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "formnovalidateChanged",
-              "privacy": "private",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "formtarget",
-              "type": {
-                "text": "\"_self\" | \"_blank\" | \"_parent\" | \"_top\""
-              },
-              "privacy": "public",
-              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "formtargetChanged",
-              "privacy": "private",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "type",
-              "type": {
-                "text": "\"submit\" | \"reset\" | \"button\""
-              },
-              "privacy": "public",
-              "description": "The button type.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "typeChanged",
-              "privacy": "private",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "parameters": [
-                {
-                  "name": "previous",
-                  "type": {
-                    "text": "\"submit\" | \"reset\" | \"button\" | void"
-                  }
-                },
-                {
-                  "name": "next",
-                  "type": {
-                    "text": "\"submit\" | \"reset\" | \"button\""
-                  }
-                }
-              ],
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "defaultSlottedContent",
-              "type": {
-                "text": "HTMLElement[]"
-              },
-              "privacy": "public",
-              "description": "\nDefault slotted content",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "handleSubmission",
-              "privacy": "private",
-              "description": "Submits the parent form",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "handleFormReset",
-              "privacy": "private",
-              "description": "Resets the parent form",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "control",
-              "type": {
-                "text": "HTMLButtonElement"
-              },
-              "privacy": "public",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "handleUnsupportedDelegatesFocus",
-              "privacy": "private",
-              "description": "Overrides the focus call for where delegatesFocus is unsupported.\nThis check works for Chrome, Edge Chromium, FireFox, and Safari\nRelevant PR on the Firefox browser: https://phabricator.services.mozilla.com/D123858",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "proxy",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "_presentation",
-              "type": {
-                "text": "ComponentPresentation | null | undefined"
-              },
-              "privacy": "private",
-              "default": "void 0",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "$presentation",
-              "type": {
-                "text": "ComponentPresentation | null"
-              },
-              "privacy": "public",
-              "description": "A property which resolves the ComponentPresentation instance\nfor the current component.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "template",
-              "type": {
-                "text": "ElementViewTemplate | void | null"
-              },
-              "privacy": "public",
-              "description": "Sets the template of the element instance. When undefined,\nthe element will attempt to resolve the template from\nthe associated presentation or custom element definition.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "templateChanged",
-              "privacy": "protected",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "styles",
-              "type": {
-                "text": "ElementStyles | void | null"
-              },
-              "privacy": "public",
-              "description": "Sets the default styles for the element instance. When undefined,\nthe element will attempt to resolve default styles from\nthe associated presentation or custom element definition.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "stylesChanged",
-              "privacy": "protected",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "compose",
-              "privacy": "public",
-              "static": true,
-              "return": {
-                "type": {
-                  "text": "(\n        overrideDefinition?: OverrideFoundationElementDefinition<T>\n    ) => FoundationElementRegistry<T, K>"
-                }
-              },
-              "parameters": [
-                {
-                  "name": "this",
-                  "type": {
-                    "text": "K"
-                  }
-                },
-                {
-                  "name": "elementDefinition",
-                  "type": {
-                    "text": "T"
-                  },
-                  "description": "The definition of the element to create the registry\nfunction for."
-                }
-              ],
-              "description": "Defines an element registry function with a set of element definition defaults.",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
             }
           ],
           "attributes": [
@@ -4918,93 +4542,10 @@
               "default": "\"neutral\"",
               "description": "The appearance the button should have.",
               "fieldName": "appearance"
-            },
-            {
-              "type": {
-                "text": "boolean"
-              },
-              "description": "Determines if the element should receive document focus on page load.",
-              "fieldName": "autofocus",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "name": "form",
-              "type": {
-                "text": "string"
-              },
-              "description": "The id of a form to associate the element to.",
-              "fieldName": "formId",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "name": "formaction",
-              "type": {
-                "text": "string"
-              },
-              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
-              "fieldName": "formaction",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "name": "formenctype",
-              "type": {
-                "text": "string"
-              },
-              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
-              "fieldName": "formenctype",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "name": "formmethod",
-              "type": {
-                "text": "string"
-              },
-              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
-              "fieldName": "formmethod",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "name": "formtarget",
-              "type": {
-                "text": "\"_self\" | \"_blank\" | \"_parent\" | \"_top\""
-              },
-              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
-              "fieldName": "formtarget",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
-            },
-            {
-              "name": "type",
-              "type": {
-                "text": "\"submit\" | \"reset\" | \"button\""
-              },
-              "description": "The button type.",
-              "fieldName": "type",
-              "inheritedFrom": {
-                "name": "Button",
-                "module": "src/button/button.ts"
-              }
             }
           ],
           "superclass": {
-            "name": "Button",
+            "name": "FoundationButton",
             "package": "@microsoft/fast-foundation"
           },
           "tagName": "%%prefix%%-button",
@@ -5020,9 +4561,9 @@
       "exports": [
         {
           "kind": "js",
-          "name": "ButtonTwo",
+          "name": "Button",
           "declaration": {
-            "name": "ButtonTwo",
+            "name": "Button",
             "module": "src/button/index.ts"
           }
         },
@@ -7022,129 +6563,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/menu-item/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastMenuItem",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#MenuItem} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#menuItemTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastMenuItem",
-          "declaration": {
-            "name": "fastMenuItem",
-            "module": "src/menu-item/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "MenuItem",
-          "declaration": {
-            "name": "MenuItem",
-            "module": "src/menu-item/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "menuItemStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/menu-item/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/menu-item/menu-item.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/menu-item/menu-item.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/menu-item/menu-item.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "MenuItem"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/menu-item/menu-item.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "MenuItem",
-          "declaration": {
-            "name": "MenuItem",
-            "module": "src/menu-item/menu-item.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/menu-item/menu-item.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "menuItemStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Menu item",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "menuItemStyles",
-          "declaration": {
-            "name": "menuItemStyles",
-            "module": "src/menu-item/menu-item.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/menu-item/menu-item.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/menu-item/menu-item.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/menu/index.ts",
       "declarations": [
         {
@@ -7390,6 +6808,129 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/menu-item/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastMenuItem",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#MenuItem} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#menuItemTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastMenuItem",
+          "declaration": {
+            "name": "fastMenuItem",
+            "module": "src/menu-item/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "MenuItem",
+          "declaration": {
+            "name": "MenuItem",
+            "module": "src/menu-item/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "menuItemStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/menu-item/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/menu-item/menu-item.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/menu-item/menu-item.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/menu-item/menu-item.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "MenuItem"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/menu-item/menu-item.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "MenuItem",
+          "declaration": {
+            "name": "MenuItem",
+            "module": "src/menu-item/menu-item.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/menu-item/menu-item.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "menuItemStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Menu item",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "menuItemStyles",
+          "declaration": {
+            "name": "menuItemStyles",
+            "module": "src/menu-item/menu-item.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/menu-item/menu-item.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/menu-item/menu-item.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/number-field/index.ts",
       "declarations": [
         {
@@ -7499,129 +7040,6 @@
           "name": "default",
           "declaration": {
             "module": "src/number-field/number-field.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/progress-ring/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastProgressRing",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#BaseProgress} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#progressRingTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastProgressRing",
-          "declaration": {
-            "name": "fastProgressRing",
-            "module": "src/progress-ring/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "ProgressRing",
-          "declaration": {
-            "name": "ProgressRing",
-            "module": "src/progress-ring/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "progressRingStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/progress-ring/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/progress-ring/progress-ring.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/progress-ring/progress-ring.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/progress-ring/progress-ring.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "ProgressRing"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/progress-ring/progress-ring.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "ProgressRing",
-          "declaration": {
-            "name": "ProgressRing",
-            "module": "src/progress-ring/progress-ring.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/progress-ring/progress-ring.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "progressRingStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Progress Ring",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "progressRingStyles",
-          "declaration": {
-            "name": "progressRingStyles",
-            "module": "src/progress-ring/progress-ring.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/progress-ring/progress-ring.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/progress-ring/progress-ring.vscode.definition.ts"
           }
         }
       ]
@@ -8311,6 +7729,129 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/progress-ring/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastProgressRing",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#BaseProgress} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#progressRingTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastProgressRing",
+          "declaration": {
+            "name": "fastProgressRing",
+            "module": "src/progress-ring/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "ProgressRing",
+          "declaration": {
+            "name": "ProgressRing",
+            "module": "src/progress-ring/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "progressRingStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/progress-ring/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/progress-ring/progress-ring.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/progress-ring/progress-ring.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/progress-ring/progress-ring.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "ProgressRing"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/progress-ring/progress-ring.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "ProgressRing",
+          "declaration": {
+            "name": "ProgressRing",
+            "module": "src/progress-ring/progress-ring.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/progress-ring/progress-ring.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "progressRingStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Progress Ring",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "progressRingStyles",
+          "declaration": {
+            "name": "progressRingStyles",
+            "module": "src/progress-ring/progress-ring.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/progress-ring/progress-ring.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/progress-ring/progress-ring.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/radio/index.ts",
       "declarations": [
         {
@@ -8962,129 +8503,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/slider/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastSlider",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#Slider} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#sliderTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastSlider",
-          "declaration": {
-            "name": "fastSlider",
-            "module": "src/slider/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Slider",
-          "declaration": {
-            "name": "Slider",
-            "module": "src/slider/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "sliderStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/slider/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/slider/slider.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "Slider"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/slider/slider.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Slider",
-          "declaration": {
-            "name": "Slider",
-            "module": "src/slider/slider.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "sliderStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Slider",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "sliderStyles",
-          "declaration": {
-            "name": "sliderStyles",
-            "module": "src/slider/slider.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/slider/slider.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/slider-label/index.ts",
       "declarations": [
         {
@@ -9240,6 +8658,129 @@
           "name": "default",
           "declaration": {
             "module": "src/slider-label/slider-label.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastSlider",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#Slider} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#sliderTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastSlider",
+          "declaration": {
+            "name": "fastSlider",
+            "module": "src/slider/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Slider",
+          "declaration": {
+            "name": "Slider",
+            "module": "src/slider/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "sliderStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/slider/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/slider/slider.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Slider"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/slider/slider.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Slider",
+          "declaration": {
+            "name": "Slider",
+            "module": "src/slider/slider.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "sliderStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Slider",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "sliderStyles",
+          "declaration": {
+            "name": "sliderStyles",
+            "module": "src/slider/slider.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/slider/slider.vscode.definition.ts"
           }
         }
       ]
@@ -10191,135 +9732,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/tooltip/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastTooltip",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#Tooltip} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#tooltipTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastTooltip",
-          "declaration": {
-            "name": "fastTooltip",
-            "module": "src/tooltip/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Tooltip",
-          "declaration": {
-            "name": "Tooltip",
-            "module": "src/tooltip/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "tooltipStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/tooltip/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tooltip/tooltip.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/tooltip/tooltip.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tooltip/tooltip.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "Tooltip"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/tooltip/tooltip.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Tooltip",
-          "declaration": {
-            "name": "Tooltip",
-            "module": "src/tooltip/tooltip.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tooltip/tooltip.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "tooltipStyles",
-          "parameters": [
-            {
-              "name": "context",
-              "type": {
-                "text": "ElementDefinitionContext"
-              }
-            },
-            {
-              "name": "definition",
-              "type": {
-                "text": "FoundationElementDefinition"
-              }
-            }
-          ],
-          "description": "Styles for Tooltip",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "tooltipStyles",
-          "declaration": {
-            "name": "tooltipStyles",
-            "module": "src/tooltip/tooltip.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tooltip/tooltip.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/tooltip/tooltip.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/tree-item/index.ts",
       "declarations": [
         {
@@ -10452,6 +9864,135 @@
           "name": "default",
           "declaration": {
             "module": "src/tree-item/tree-item.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tooltip/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastTooltip",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#Tooltip} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#tooltipTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastTooltip",
+          "declaration": {
+            "name": "fastTooltip",
+            "module": "src/tooltip/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Tooltip",
+          "declaration": {
+            "name": "Tooltip",
+            "module": "src/tooltip/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "tooltipStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/tooltip/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tooltip/tooltip.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/tooltip/tooltip.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tooltip/tooltip.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Tooltip"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/tooltip/tooltip.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Tooltip",
+          "declaration": {
+            "name": "Tooltip",
+            "module": "src/tooltip/tooltip.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tooltip/tooltip.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "tooltipStyles",
+          "parameters": [
+            {
+              "name": "context",
+              "type": {
+                "text": "ElementDefinitionContext"
+              }
+            },
+            {
+              "name": "definition",
+              "type": {
+                "text": "FoundationElementDefinition"
+              }
+            }
+          ],
+          "description": "Styles for Tooltip",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "tooltipStyles",
+          "declaration": {
+            "name": "tooltipStyles",
+            "module": "src/tooltip/tooltip.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tooltip/tooltip.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/tooltip/tooltip.vscode.definition.ts"
           }
         }
       ]
