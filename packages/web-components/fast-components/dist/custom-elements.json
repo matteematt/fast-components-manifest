@@ -3097,300 +3097,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/anchor/anchor.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/anchor/anchor.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/anchor/anchor.pw.spec.ts",
-      "declarations": [],
-      "exports": []
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/anchor/anchor.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "Anchor"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/anchor/anchor.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Anchor",
-          "declaration": {
-            "name": "Anchor",
-            "module": "src/anchor/anchor.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/anchor/anchor.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "anchorStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Anchor",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "anchorStyles",
-          "declaration": {
-            "name": "anchorStyles",
-            "module": "src/anchor/anchor.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/anchor/anchor.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/anchor/anchor.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/anchor/index.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "Base class for Anchor",
-          "name": "Anchor",
-          "members": [
-            {
-              "kind": "field",
-              "name": "appearance",
-              "type": {
-                "text": "AnchorAppearance | undefined"
-              },
-              "privacy": "public",
-              "description": "The appearance the anchor should have."
-            },
-            {
-              "kind": "method",
-              "name": "appearanceChanged",
-              "privacy": "public",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "parameters": [
-                {
-                  "name": "oldValue",
-                  "type": {
-                    "text": "AnchorAppearance"
-                  }
-                },
-                {
-                  "name": "newValue",
-                  "type": {
-                    "text": "AnchorAppearance"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "field",
-              "name": "_presentation",
-              "type": {
-                "text": "ComponentPresentation | null | undefined"
-              },
-              "privacy": "private",
-              "default": "void 0",
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "$presentation",
-              "type": {
-                "text": "ComponentPresentation | null"
-              },
-              "privacy": "public",
-              "description": "A property which resolves the ComponentPresentation instance\nfor the current component.",
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "template",
-              "type": {
-                "text": "ElementViewTemplate | void | null"
-              },
-              "privacy": "public",
-              "description": "Sets the template of the element instance. When undefined,\nthe element will attempt to resolve the template from\nthe associated presentation or custom element definition.",
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "templateChanged",
-              "privacy": "protected",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "styles",
-              "type": {
-                "text": "ElementStyles | void | null"
-              },
-              "privacy": "public",
-              "description": "Sets the default styles for the element instance. When undefined,\nthe element will attempt to resolve default styles from\nthe associated presentation or custom element definition.",
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "stylesChanged",
-              "privacy": "protected",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              },
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            },
-            {
-              "kind": "method",
-              "name": "compose",
-              "privacy": "public",
-              "static": true,
-              "return": {
-                "type": {
-                  "text": "(\n        overrideDefinition?: OverrideFoundationElementDefinition<T>\n    ) => FoundationElementRegistry<T, K>"
-                }
-              },
-              "parameters": [
-                {
-                  "name": "this",
-                  "type": {
-                    "text": "K"
-                  }
-                },
-                {
-                  "name": "elementDefinition",
-                  "type": {
-                    "text": "T"
-                  },
-                  "description": "The definition of the element to create the registry\nfunction for."
-                }
-              ],
-              "description": "Defines an element registry function with a set of element definition defaults.",
-              "inheritedFrom": {
-                "name": "FoundationElement",
-                "module": "src/foundation-element/foundation-element.ts"
-              }
-            }
-          ],
-          "attributes": [
-            {
-              "name": "appearance",
-              "type": {
-                "text": "AnchorAppearance | undefined"
-              },
-              "description": "The appearance the anchor should have.",
-              "fieldName": "appearance"
-            }
-          ],
-          "superclass": {
-            "name": "FoundationAnchor",
-            "package": "@microsoft/fast-foundation"
-          }
-        },
-        {
-          "kind": "variable",
-          "name": "fastAnchor",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#Anchor} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#anchorTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "Anchor",
-          "declaration": {
-            "name": "Anchor",
-            "module": "src/anchor/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "fastAnchor",
-          "declaration": {
-            "name": "fastAnchor",
-            "module": "src/anchor/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "anchorStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/anchor/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/accordion/accordion.open-ui.definition.ts",
       "declarations": [],
       "exports": [
@@ -3618,6 +3324,523 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/anchor/anchor.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/anchor/anchor.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/anchor/anchor.pw.spec.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/anchor/anchor.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Anchor"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/anchor/anchor.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Anchor",
+          "declaration": {
+            "name": "Anchor",
+            "module": "src/anchor/anchor.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/anchor/anchor.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "anchorStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Anchor",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "anchorStyles",
+          "declaration": {
+            "name": "anchorStyles",
+            "module": "src/anchor/anchor.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/anchor/anchor.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/anchor/anchor.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/anchor/index.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Base class for Anchor",
+          "name": "Anchor",
+          "members": [
+            {
+              "kind": "field",
+              "name": "appearance",
+              "type": {
+                "text": "AnchorAppearance | undefined"
+              },
+              "privacy": "public",
+              "description": "The appearance the anchor should have."
+            },
+            {
+              "kind": "method",
+              "name": "appearanceChanged",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "oldValue",
+                  "type": {
+                    "text": "AnchorAppearance"
+                  }
+                },
+                {
+                  "name": "newValue",
+                  "type": {
+                    "text": "AnchorAppearance"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "download",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "Prompts the user to save the linked URL. See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element } for more information.",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "The URL the hyperlink references. See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element } for more information.",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "hreflang",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "Hints at the language of the referenced resource. See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element } for more information.",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "ping",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element } for more information.",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "referrerpolicy",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element } for more information.",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element } for more information.",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "target",
+              "type": {
+                "text": "\"_self\" | \"_blank\" | \"_parent\" | \"_top\""
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element } for more information.",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element } for more information.",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "control",
+              "type": {
+                "text": "HTMLAnchorElement"
+              },
+              "privacy": "public",
+              "description": "References the root element",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "handleUnsupportedDelegatesFocus",
+              "privacy": "private",
+              "description": "Overrides the focus call for where delegatesFocus is unsupported.\nThis check works for Chrome, Edge Chromium, FireFox, and Safari\nRelevant PR on the Firefox browser: https://phabricator.services.mozilla.com/D123858",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "_presentation",
+              "type": {
+                "text": "ComponentPresentation | null | undefined"
+              },
+              "privacy": "private",
+              "default": "void 0",
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "$presentation",
+              "type": {
+                "text": "ComponentPresentation | null"
+              },
+              "privacy": "public",
+              "description": "A property which resolves the ComponentPresentation instance\nfor the current component.",
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "template",
+              "type": {
+                "text": "ElementViewTemplate | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the template of the element instance. When undefined,\nthe element will attempt to resolve the template from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "templateChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "styles",
+              "type": {
+                "text": "ElementStyles | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the default styles for the element instance. When undefined,\nthe element will attempt to resolve default styles from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "stylesChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "compose",
+              "privacy": "public",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "(\n        overrideDefinition?: OverrideFoundationElementDefinition<T>\n    ) => FoundationElementRegistry<T, K>"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "this",
+                  "type": {
+                    "text": "K"
+                  }
+                },
+                {
+                  "name": "elementDefinition",
+                  "type": {
+                    "text": "T"
+                  },
+                  "description": "The definition of the element to create the registry\nfunction for."
+                }
+              ],
+              "description": "Defines an element registry function with a set of element definition defaults.",
+              "inheritedFrom": {
+                "name": "FoundationElement",
+                "module": "src/foundation-element/foundation-element.ts"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "appearance",
+              "type": {
+                "text": "AnchorAppearance | undefined"
+              },
+              "description": "The appearance the anchor should have.",
+              "fieldName": "appearance"
+            },
+            {
+              "name": "download",
+              "type": {
+                "text": "string"
+              },
+              "description": "Prompts the user to save the linked URL. See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element  for more information.",
+              "fieldName": "download",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "name": "href",
+              "type": {
+                "text": "string"
+              },
+              "description": "The URL the hyperlink references. See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element  for more information.",
+              "fieldName": "href",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "name": "hreflang",
+              "type": {
+                "text": "string"
+              },
+              "description": "Hints at the language of the referenced resource. See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element  for more information.",
+              "fieldName": "hreflang",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "name": "ping",
+              "type": {
+                "text": "string"
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element  for more information.",
+              "fieldName": "ping",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "name": "referrerpolicy",
+              "type": {
+                "text": "string"
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element  for more information.",
+              "fieldName": "referrerpolicy",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "name": "rel",
+              "type": {
+                "text": "string"
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element  for more information.",
+              "fieldName": "rel",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "name": "target",
+              "type": {
+                "text": "\"_self\" | \"_blank\" | \"_parent\" | \"_top\""
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element  for more information.",
+              "fieldName": "target",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            },
+            {
+              "name": "type",
+              "type": {
+                "text": "string"
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a | <a> element  for more information.",
+              "fieldName": "type",
+              "inheritedFrom": {
+                "name": "Anchor",
+                "module": "src/anchor/anchor.ts"
+              }
+            }
+          ],
+          "superclass": {
+            "name": "FoundationAnchor",
+            "package": "@microsoft/fast-foundation"
+          }
+        },
+        {
+          "kind": "variable",
+          "name": "fastAnchor",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#Anchor} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#anchorTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Anchor",
+          "declaration": {
+            "name": "Anchor",
+            "module": "src/anchor/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "fastAnchor",
+          "declaration": {
+            "name": "fastAnchor",
+            "module": "src/anchor/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "anchorStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/anchor/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/anchored-region/anchored-region.open-ui.definition.ts",
       "declarations": [],
       "exports": [
@@ -3740,129 +3963,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/badge/badge.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/badge/badge.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/badge/badge.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "Badge"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/badge/badge.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Badge",
-          "declaration": {
-            "name": "Badge",
-            "module": "src/badge/badge.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/badge/badge.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "badgeStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Badge",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "badgeStyles",
-          "declaration": {
-            "name": "badgeStyles",
-            "module": "src/badge/badge.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/badge/badge.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/badge/badge.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/badge/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastBadge",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#Badge} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#badgeTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastBadge",
-          "declaration": {
-            "name": "fastBadge",
-            "module": "src/badge/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Badge",
-          "declaration": {
-            "name": "Badge",
-            "module": "src/badge/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "badgeStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/badge/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/avatar/avatar.open-ui.definition.ts",
       "declarations": [],
       "exports": [
@@ -3972,6 +4072,58 @@
               },
               "privacy": "public",
               "description": "Indicates the Avatar should have alt text"
+            },
+            {
+              "kind": "field",
+              "name": "fill",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "Indicates the Avatar should have a color fill.",
+              "inheritedFrom": {
+                "name": "Avatar",
+                "module": "src/avatar/avatar.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "color",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "Indicates the Avatar should have a text color.",
+              "inheritedFrom": {
+                "name": "Avatar",
+                "module": "src/avatar/avatar.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "link",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "Indicates the Avatar should have url link",
+              "inheritedFrom": {
+                "name": "Avatar",
+                "module": "src/avatar/avatar.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "shape",
+              "type": {
+                "text": "AvatarShape"
+              },
+              "privacy": "public",
+              "description": "Indicates the Avatar shape should be. By default it will be set to \"circle\".",
+              "inheritedFrom": {
+                "name": "Avatar",
+                "module": "src/avatar/avatar.ts"
+              }
             },
             {
               "kind": "field",
@@ -4101,6 +4253,54 @@
               },
               "description": "Indicates the Avatar should have alt text",
               "fieldName": "alt"
+            },
+            {
+              "name": "fill",
+              "type": {
+                "text": "string"
+              },
+              "description": "Indicates the Avatar should have a color fill.",
+              "fieldName": "fill",
+              "inheritedFrom": {
+                "name": "Avatar",
+                "module": "src/avatar/avatar.ts"
+              }
+            },
+            {
+              "name": "color",
+              "type": {
+                "text": "string"
+              },
+              "description": "Indicates the Avatar should have a text color.",
+              "fieldName": "color",
+              "inheritedFrom": {
+                "name": "Avatar",
+                "module": "src/avatar/avatar.ts"
+              }
+            },
+            {
+              "name": "link",
+              "type": {
+                "text": "string"
+              },
+              "description": "Indicates the Avatar should have url link",
+              "fieldName": "link",
+              "inheritedFrom": {
+                "name": "Avatar",
+                "module": "src/avatar/avatar.ts"
+              }
+            },
+            {
+              "name": "shape",
+              "type": {
+                "text": "AvatarShape"
+              },
+              "description": "Indicates the Avatar shape should be. By default it will be set to \"circle\".",
+              "fieldName": "shape",
+              "inheritedFrom": {
+                "name": "Avatar",
+                "module": "src/avatar/avatar.ts"
+              }
             }
           ],
           "superclass": {
@@ -4159,25 +4359,25 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/breadcrumb-item/breadcrumb-item.open-ui.definition.ts",
+      "path": "src/badge/badge.open-ui.definition.ts",
       "declarations": [],
       "exports": [
         {
           "kind": "js",
           "name": "default",
           "declaration": {
-            "module": "src/breadcrumb-item/breadcrumb-item.open-ui.definition.ts"
+            "module": "src/badge/badge.open-ui.definition.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/breadcrumb-item/breadcrumb-item.stories.ts",
+      "path": "src/badge/badge.stories.ts",
       "declarations": [
         {
           "kind": "function",
-          "name": "BreadcrumbItem"
+          "name": "Badge"
         }
       ],
       "exports": [
@@ -4185,26 +4385,26 @@
           "kind": "js",
           "name": "default",
           "declaration": {
-            "module": "src/breadcrumb-item/breadcrumb-item.stories.ts"
+            "module": "src/badge/badge.stories.ts"
           }
         },
         {
           "kind": "js",
-          "name": "BreadcrumbItem",
+          "name": "Badge",
           "declaration": {
-            "name": "BreadcrumbItem",
-            "module": "src/breadcrumb-item/breadcrumb-item.stories.ts"
+            "name": "Badge",
+            "module": "src/badge/badge.stories.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/breadcrumb-item/breadcrumb-item.styles.ts",
+      "path": "src/badge/badge.styles.ts",
       "declarations": [
         {
           "kind": "function",
-          "name": "breadcrumbItemStyles",
+          "name": "badgeStyles",
           "parameters": [
             {
               "name": "context"
@@ -4213,69 +4413,69 @@
               "name": "definition"
             }
           ],
-          "description": "Styles for Breadcrumb item",
+          "description": "Styles for Badge",
           "privacy": "public"
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "breadcrumbItemStyles",
+          "name": "badgeStyles",
           "declaration": {
-            "name": "breadcrumbItemStyles",
-            "module": "src/breadcrumb-item/breadcrumb-item.styles.ts"
+            "name": "badgeStyles",
+            "module": "src/badge/badge.styles.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/breadcrumb-item/breadcrumb-item.vscode.definition.ts",
+      "path": "src/badge/badge.vscode.definition.ts",
       "declarations": [],
       "exports": [
         {
           "kind": "js",
           "name": "default",
           "declaration": {
-            "module": "src/breadcrumb-item/breadcrumb-item.vscode.definition.ts"
+            "module": "src/badge/badge.vscode.definition.ts"
           }
         }
       ]
     },
     {
       "kind": "javascript-module",
-      "path": "src/breadcrumb-item/index.ts",
+      "path": "src/badge/index.ts",
       "declarations": [
         {
           "kind": "variable",
-          "name": "fastBreadcrumbItem",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#BreadcrumbItem} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#breadcrumbItemTemplate}",
+          "name": "fastBadge",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#Badge} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#badgeTemplate}",
           "privacy": "public"
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "fastBreadcrumbItem",
+          "name": "fastBadge",
           "declaration": {
-            "name": "fastBreadcrumbItem",
-            "module": "src/breadcrumb-item/index.ts"
+            "name": "fastBadge",
+            "module": "src/badge/index.ts"
           }
         },
         {
           "kind": "js",
-          "name": "BreadcrumbItem",
+          "name": "Badge",
           "declaration": {
-            "name": "BreadcrumbItem",
-            "module": "src/breadcrumb-item/index.ts"
+            "name": "Badge",
+            "module": "src/badge/index.ts"
           }
         },
         {
           "kind": "js",
-          "name": "breadcrumbItemStyles",
+          "name": "badgeStyles",
           "declaration": {
             "name": "styles",
-            "module": "src/breadcrumb-item/index.ts"
+            "module": "src/badge/index.ts"
           }
         }
       ]
@@ -4399,6 +4599,129 @@
           "declaration": {
             "name": "styles",
             "module": "src/breadcrumb/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/breadcrumb-item/breadcrumb-item.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/breadcrumb-item/breadcrumb-item.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/breadcrumb-item/breadcrumb-item.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "BreadcrumbItem"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/breadcrumb-item/breadcrumb-item.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "BreadcrumbItem",
+          "declaration": {
+            "name": "BreadcrumbItem",
+            "module": "src/breadcrumb-item/breadcrumb-item.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/breadcrumb-item/breadcrumb-item.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "breadcrumbItemStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Breadcrumb item",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "breadcrumbItemStyles",
+          "declaration": {
+            "name": "breadcrumbItemStyles",
+            "module": "src/breadcrumb-item/breadcrumb-item.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/breadcrumb-item/breadcrumb-item.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/breadcrumb-item/breadcrumb-item.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/breadcrumb-item/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastBreadcrumbItem",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#BreadcrumbItem} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#breadcrumbItemTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastBreadcrumbItem",
+          "declaration": {
+            "name": "fastBreadcrumbItem",
+            "module": "src/breadcrumb-item/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "BreadcrumbItem",
+          "declaration": {
+            "name": "BreadcrumbItem",
+            "module": "src/breadcrumb-item/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "breadcrumbItemStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/breadcrumb-item/index.ts"
           }
         }
       ]
@@ -4531,6 +4854,382 @@
                 }
               ],
               "description": "Applies 'icon-only' class when there is only an SVG in the default slot"
+            },
+            {
+              "kind": "field",
+              "name": "autofocus",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "description": "Determines if the element should receive document focus on page load.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formId",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "The id of a form to associate the element to.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formaction",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "formactionChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formenctype",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "formenctypeChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formmethod",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "formmethodChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formnovalidate",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "formnovalidateChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "formtarget",
+              "type": {
+                "text": "\"_self\" | \"_blank\" | \"_parent\" | \"_top\""
+              },
+              "privacy": "public",
+              "description": "See {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element} for more details.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "formtargetChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "\"submit\" | \"reset\" | \"button\""
+              },
+              "privacy": "public",
+              "description": "The button type.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "typeChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "previous",
+                  "type": {
+                    "text": "\"submit\" | \"reset\" | \"button\" | void"
+                  }
+                },
+                {
+                  "name": "next",
+                  "type": {
+                    "text": "\"submit\" | \"reset\" | \"button\""
+                  }
+                }
+              ],
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "defaultSlottedContent",
+              "type": {
+                "text": "HTMLElement[]"
+              },
+              "privacy": "public",
+              "description": "\nDefault slotted content",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "handleSubmission",
+              "privacy": "private",
+              "description": "Submits the parent form",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "handleFormReset",
+              "privacy": "private",
+              "description": "Resets the parent form",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "control",
+              "type": {
+                "text": "HTMLButtonElement"
+              },
+              "privacy": "public",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "handleUnsupportedDelegatesFocus",
+              "privacy": "private",
+              "description": "Overrides the focus call for where delegatesFocus is unsupported.\nThis check works for Chrome, Edge Chromium, FireFox, and Safari\nRelevant PR on the Firefox browser: https://phabricator.services.mozilla.com/D123858",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "proxy",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "_presentation",
+              "type": {
+                "text": "ComponentPresentation | null | undefined"
+              },
+              "privacy": "private",
+              "default": "void 0",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "$presentation",
+              "type": {
+                "text": "ComponentPresentation | null"
+              },
+              "privacy": "public",
+              "description": "A property which resolves the ComponentPresentation instance\nfor the current component.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "template",
+              "type": {
+                "text": "ElementViewTemplate | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the template of the element instance. When undefined,\nthe element will attempt to resolve the template from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "templateChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "styles",
+              "type": {
+                "text": "ElementStyles | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the default styles for the element instance. When undefined,\nthe element will attempt to resolve default styles from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "stylesChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "compose",
+              "privacy": "public",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "(\n        overrideDefinition?: OverrideFoundationElementDefinition<T>\n    ) => FoundationElementRegistry<T, K>"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "this",
+                  "type": {
+                    "text": "K"
+                  }
+                },
+                {
+                  "name": "elementDefinition",
+                  "type": {
+                    "text": "T"
+                  },
+                  "description": "The definition of the element to create the registry\nfunction for."
+                }
+              ],
+              "description": "Defines an element registry function with a set of element definition defaults.",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
             }
           ],
           "attributes": [
@@ -4542,6 +5241,89 @@
               "default": "\"neutral\"",
               "description": "The appearance the button should have.",
               "fieldName": "appearance"
+            },
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Determines if the element should receive document focus on page load.",
+              "fieldName": "autofocus",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "form",
+              "type": {
+                "text": "string"
+              },
+              "description": "The id of a form to associate the element to.",
+              "fieldName": "formId",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "formaction",
+              "type": {
+                "text": "string"
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
+              "fieldName": "formaction",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "formenctype",
+              "type": {
+                "text": "string"
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
+              "fieldName": "formenctype",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "formmethod",
+              "type": {
+                "text": "string"
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
+              "fieldName": "formmethod",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "formtarget",
+              "type": {
+                "text": "\"_self\" | \"_blank\" | \"_parent\" | \"_top\""
+              },
+              "description": "See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button | <button> element for more details.",
+              "fieldName": "formtarget",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
+            },
+            {
+              "name": "type",
+              "type": {
+                "text": "\"submit\" | \"reset\" | \"button\""
+              },
+              "description": "The button type.",
+              "fieldName": "type",
+              "inheritedFrom": {
+                "name": "Button",
+                "module": "src/button/button.ts"
+              }
             }
           ],
           "superclass": {
@@ -5094,7 +5876,508 @@
           "superclass": {
             "name": "FoundationCombobox",
             "package": "@microsoft/fast-foundation"
-          }
+          },
+          "attributes": [
+            {
+              "name": "autocomplete",
+              "type": {
+                "text": "ComboboxAutocomplete | undefined"
+              },
+              "description": "The autocomplete attribute.",
+              "fieldName": "autocomplete",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "name": "open",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "The open attribute.",
+              "fieldName": "open",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "name": "placeholder",
+              "type": {
+                "text": "string"
+              },
+              "description": "Sets the placeholder value of the element, generally used to provide a hint to the user.",
+              "fieldName": "placeholder",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "name": "position",
+              "type": {
+                "text": "SelectPosition | undefined"
+              },
+              "description": "The placement for the listbox when the combobox is open.",
+              "fieldName": "positionAttribute",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "The disabled state of the listbox.",
+              "fieldName": "disabled",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "autocomplete",
+              "type": {
+                "text": "ComboboxAutocomplete | undefined"
+              },
+              "description": "The autocomplete attribute.",
+              "privacy": "public",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "filteredOptions",
+              "type": {
+                "text": "ListboxOption[]"
+              },
+              "privacy": "public",
+              "default": "[]",
+              "description": "The collection of currently filtered options.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "isAutocompleteInline",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "isAutocompleteList",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "isAutocompleteBoth",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "open",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "default": "false",
+              "description": "The open attribute.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "options",
+              "type": {
+                "text": "ListboxOption[]"
+              },
+              "privacy": "public",
+              "description": "The list of options.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "placeholder",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "Sets the placeholder value of the element, generally used to provide a hint to the user.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "positionAttribute",
+              "type": {
+                "text": "SelectPosition | undefined"
+              },
+              "privacy": "public",
+              "description": "The placement for the listbox when the combobox is open.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "position",
+              "type": {
+                "text": "SelectPosition | undefined"
+              },
+              "privacy": "public",
+              "description": "The current state of the calculated position of the listbox.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "positionChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "prev",
+                  "type": {
+                    "text": "SelectPosition | undefined"
+                  }
+                },
+                {
+                  "name": "next",
+                  "type": {
+                    "text": "SelectPosition | undefined"
+                  }
+                }
+              ],
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "privacy": "public",
+              "description": "The value property.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "filterOptions",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "description": "Filter available options by text value.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setPositioning",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "description": "Calculate and apply listbox positioning based on available viewport space.",
+              "parameters": [
+                {
+                  "description": "direction to force the listbox to display",
+                  "name": "force"
+                }
+              ],
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "proxy",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "length",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "public",
+              "description": "The number of options.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "typeAheadExpired",
+              "privacy": "protected",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "description": "The disabled state of the listbox.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "selectedIndex",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "public",
+              "default": "-1",
+              "description": "The index of the selected option.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "selectedOptions",
+              "type": {
+                "text": "ListboxOption[]"
+              },
+              "privacy": "public",
+              "default": "[]",
+              "description": "A collection of the selected options.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "slottedOptionFilter",
+              "privacy": "public",
+              "static": true,
+              "description": "A static filter to include only selectable options.",
+              "parameters": [
+                {
+                  "description": "element to filter",
+                  "name": "n"
+                }
+              ],
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "selectFirstOption",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "description": "Moves focus to the first selectable option.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setSelectedOptions",
+              "privacy": "public",
+              "description": "Sets an option as selected and gives it focus.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "_presentation",
+              "type": {
+                "text": "ComponentPresentation | null | undefined"
+              },
+              "privacy": "private",
+              "default": "void 0",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "$presentation",
+              "type": {
+                "text": "ComponentPresentation | null"
+              },
+              "privacy": "public",
+              "description": "A property which resolves the ComponentPresentation instance\nfor the current component.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "template",
+              "type": {
+                "text": "ElementViewTemplate | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the template of the element instance. When undefined,\nthe element will attempt to resolve the template from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "templateChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "styles",
+              "type": {
+                "text": "ElementStyles | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the default styles for the element instance. When undefined,\nthe element will attempt to resolve default styles from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "stylesChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "compose",
+              "privacy": "public",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "(\n        overrideDefinition?: OverrideFoundationElementDefinition<T>\n    ) => FoundationElementRegistry<T, K>"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "this",
+                  "type": {
+                    "text": "K"
+                  }
+                },
+                {
+                  "name": "elementDefinition",
+                  "type": {
+                    "text": "T"
+                  },
+                  "description": "The definition of the element to create the registry\nfunction for."
+                }
+              ],
+              "description": "Defines an element registry function with a set of element definition defaults.",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            }
+          ],
+          "events": [
+            {
+              "description": "Fires a custom 'change' event when the value updates",
+              "name": "change",
+              "inheritedFrom": {
+                "name": "Combobox",
+                "module": "src/combobox/combobox.ts"
+              }
+            }
+          ]
         },
         {
           "kind": "variable",
@@ -6180,7 +7463,164 @@
             "name": "FoundationListboxElement",
             "package": "@microsoft/fast-foundation"
           },
+          "attributes": [
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Indicates if the listbox is in multi-selection mode.",
+              "fieldName": "multiple",
+              "inheritedFrom": {
+                "name": "Listbox",
+                "module": "src/listbox/listbox.ts"
+              }
+            }
+          ],
           "members": [
+            {
+              "kind": "field",
+              "name": "multiple",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "description": "Indicates if the listbox is in multi-selection mode.",
+              "inheritedFrom": {
+                "name": "ListboxElement",
+                "module": "src/listbox/listbox.element.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "public",
+              "description": "The maximum number of options to display.",
+              "inheritedFrom": {
+                "name": "ListboxElement",
+                "module": "src/listbox/listbox.element.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setSelectedOptions",
+              "privacy": "public",
+              "description": "Sets an option as selected and gives it focus.",
+              "inheritedFrom": {
+                "name": "Listbox",
+                "module": "src/listbox/listbox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "length",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "public",
+              "description": "The number of options.",
+              "inheritedFrom": {
+                "name": "Listbox",
+                "module": "src/listbox/listbox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "options",
+              "type": {
+                "text": "ListboxOption[]"
+              },
+              "privacy": "public",
+              "description": "The list of options.",
+              "inheritedFrom": {
+                "name": "Listbox",
+                "module": "src/listbox/listbox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "typeAheadExpired",
+              "privacy": "protected",
+              "inheritedFrom": {
+                "name": "Listbox",
+                "module": "src/listbox/listbox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "description": "The disabled state of the listbox.",
+              "inheritedFrom": {
+                "name": "Listbox",
+                "module": "src/listbox/listbox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "selectedIndex",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "public",
+              "default": "-1",
+              "description": "The index of the selected option.",
+              "inheritedFrom": {
+                "name": "Listbox",
+                "module": "src/listbox/listbox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "selectedOptions",
+              "type": {
+                "text": "ListboxOption[]"
+              },
+              "privacy": "public",
+              "default": "[]",
+              "description": "A collection of the selected options.",
+              "inheritedFrom": {
+                "name": "Listbox",
+                "module": "src/listbox/listbox.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "slottedOptionFilter",
+              "privacy": "public",
+              "static": true,
+              "description": "A static filter to include only selectable options.",
+              "parameters": [
+                {
+                  "description": "element to filter",
+                  "name": "n"
+                }
+              ],
+              "inheritedFrom": {
+                "name": "Listbox",
+                "module": "src/listbox/listbox.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "selectFirstOption",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "description": "Moves focus to the first selectable option.",
+              "inheritedFrom": {
+                "name": "Listbox",
+                "module": "src/listbox/listbox.ts"
+              }
+            },
             {
               "kind": "field",
               "name": "_presentation",
@@ -6574,6 +8014,226 @@
             "package": "@microsoft/fast-foundation"
           },
           "members": [
+            {
+              "kind": "method",
+              "name": "itemsChanged",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "oldValue",
+                  "type": {
+                    "text": "HTMLElement[]"
+                  }
+                },
+                {
+                  "name": "newValue",
+                  "type": {
+                    "text": "HTMLElement[]"
+                  }
+                }
+              ],
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "menuItems",
+              "type": {
+                "text": "Element[] | undefined"
+              },
+              "privacy": "private",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "expandedItem",
+              "type": {
+                "text": "MenuItem | null"
+              },
+              "privacy": "private",
+              "default": "null",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "focusIndex",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "private",
+              "default": "-1",
+              "description": "The index of the focusable element in the items array\ndefaults to -1",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "focusableElementRoles",
+              "type": {
+                "text": "{ [key: string]: string }"
+              },
+              "privacy": "private",
+              "static": true,
+              "default": "roleForMenuItem",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "focus",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "description": "Focuses the first item in the menu.",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "collapseExpandedItem",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "description": "Collapses any expanded menu items.",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "handleItemFocus",
+              "privacy": "private",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "handleExpandedChanged",
+              "privacy": "private",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "removeItemListeners",
+              "privacy": "private",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "setItems",
+              "privacy": "private",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "changeHandler",
+              "privacy": "private",
+              "description": "handle change from child element",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "domChildren",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "Element[]"
+                }
+              },
+              "description": "get an array of valid DOM children",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "isMenuItemElement",
+              "privacy": "private",
+              "description": "check if the item is a menu item",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "isFocusableElement",
+              "privacy": "private",
+              "description": "check if the item is focusable",
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setFocus",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "focusIndex",
+                  "type": {
+                    "text": "number"
+                  }
+                },
+                {
+                  "name": "adjustment",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ],
+              "inheritedFrom": {
+                "name": "Menu",
+                "module": "src/menu/menu.ts"
+              }
+            },
             {
               "kind": "field",
               "name": "_presentation",
@@ -7062,6 +8722,92 @@
             "package": "@microsoft/fast-foundation"
           },
           "members": [
+            {
+              "kind": "method",
+              "name": "menuElementsChanged",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "PickerMenu",
+                "module": "src/picker/picker-menu.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "headerElementsChanged",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "PickerMenu",
+                "module": "src/picker/picker-menu.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "footerElementsChanged",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "PickerMenu",
+                "module": "src/picker/picker-menu.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "suggestionsAvailableText",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "Text to display to assistive technology when\nsuggestions are available",
+              "inheritedFrom": {
+                "name": "PickerMenu",
+                "module": "src/picker/picker-menu.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "updateOptions",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "PickerMenu",
+                "module": "src/picker/picker-menu.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "addSlottedListItems",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "slotChildren",
+                  "type": {
+                    "text": "HTMLElement[]"
+                  }
+                }
+              ],
+              "inheritedFrom": {
+                "name": "PickerMenu",
+                "module": "src/picker/picker-menu.ts"
+              }
+            },
             {
               "kind": "field",
               "name": "_presentation",
@@ -8233,13 +9979,454 @@
                 "type": {
                   "text": "void"
                 }
+              },
+              "description": "Calculate and apply listbox positioning based on available viewport space.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "open",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "default": "false",
+              "description": "The open attribute.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "privacy": "public",
+              "description": "The value property.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "positionAttribute",
+              "type": {
+                "text": "SelectPosition | undefined"
+              },
+              "privacy": "public",
+              "description": "Reflects the placement for the listbox when the select is open.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "position",
+              "type": {
+                "text": "SelectPosition | undefined"
+              },
+              "privacy": "public",
+              "description": "Holds the current state for the calculated position of the listbox.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "positionChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "prev",
+                  "type": {
+                    "text": "SelectPosition | undefined"
+                  }
+                },
+                {
+                  "name": "next",
+                  "type": {
+                    "text": "SelectPosition | undefined"
+                  }
+                }
+              ],
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "displayValue",
+              "type": {
+                "text": "string"
+              },
+              "privacy": "public",
+              "description": "The value displayed on the button.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "multipleChanged",
+              "privacy": "public",
+              "parameters": [
+                {
+                  "name": "prev",
+                  "type": {
+                    "text": "boolean | undefined"
+                  },
+                  "description": "the previous multiple value"
+                },
+                {
+                  "name": "next",
+                  "type": {
+                    "text": "boolean"
+                  },
+                  "description": "the current multiple value"
+                }
+              ],
+              "description": "Sets the multiple property on the proxy element.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "proxy",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "multiple",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "description": "Indicates if the listbox is in multi-selection mode.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "public",
+              "description": "The maximum number of options to display.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "setSelectedOptions",
+              "privacy": "public",
+              "description": "Sets an option as selected and gives it focus.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "length",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "public",
+              "description": "The number of options.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "options",
+              "type": {
+                "text": "ListboxOption[]"
+              },
+              "privacy": "public",
+              "description": "The list of options.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "typeAheadExpired",
+              "privacy": "protected",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "public",
+              "description": "The disabled state of the listbox.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "selectedIndex",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "public",
+              "default": "-1",
+              "description": "The index of the selected option.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "selectedOptions",
+              "type": {
+                "text": "ListboxOption[]"
+              },
+              "privacy": "public",
+              "default": "[]",
+              "description": "A collection of the selected options.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "slottedOptionFilter",
+              "privacy": "public",
+              "static": true,
+              "description": "A static filter to include only selectable options.",
+              "parameters": [
+                {
+                  "description": "element to filter",
+                  "name": "n"
+                }
+              ],
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "selectFirstOption",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "description": "Moves focus to the first selectable option.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "_presentation",
+              "type": {
+                "text": "ComponentPresentation | null | undefined"
+              },
+              "privacy": "private",
+              "default": "void 0",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "$presentation",
+              "type": {
+                "text": "ComponentPresentation | null"
+              },
+              "privacy": "public",
+              "description": "A property which resolves the ComponentPresentation instance\nfor the current component.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "template",
+              "type": {
+                "text": "ElementViewTemplate | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the template of the element instance. When undefined,\nthe element will attempt to resolve the template from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "templateChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "styles",
+              "type": {
+                "text": "ElementStyles | void | null"
+              },
+              "privacy": "public",
+              "description": "Sets the default styles for the element instance. When undefined,\nthe element will attempt to resolve default styles from\nthe associated presentation or custom element definition.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "stylesChanged",
+              "privacy": "protected",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              },
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "compose",
+              "privacy": "public",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "(\n        overrideDefinition?: OverrideFoundationElementDefinition<T>\n    ) => FoundationElementRegistry<T, K>"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "this",
+                  "type": {
+                    "text": "K"
+                  }
+                },
+                {
+                  "name": "elementDefinition",
+                  "type": {
+                    "text": "T"
+                  },
+                  "description": "The definition of the element to create the registry\nfunction for."
+                }
+              ],
+              "description": "Defines an element registry function with a set of element definition defaults.",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
               }
             }
           ],
           "superclass": {
             "name": "FoundationSelect",
             "package": "@microsoft/fast-foundation"
-          }
+          },
+          "attributes": [
+            {
+              "name": "open",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "The open attribute.",
+              "fieldName": "open",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "name": "position",
+              "type": {
+                "text": "SelectPosition | undefined"
+              },
+              "description": "Reflects the placement for the listbox when the select is open.",
+              "fieldName": "positionAttribute",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Indicates if the listbox is in multi-selection mode.",
+              "fieldName": "multiple",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            }
+          ],
+          "events": [
+            {
+              "description": "Fires a custom 'input' event when the value updates",
+              "name": "input",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            },
+            {
+              "description": "Fires a custom 'change' event when the value updates",
+              "name": "change",
+              "inheritedFrom": {
+                "name": "Select",
+                "module": "src/select/select.ts"
+              }
+            }
+          ]
         },
         {
           "kind": "variable",
@@ -8503,6 +10690,129 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/slider/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastSlider",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#Slider} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#sliderTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastSlider",
+          "declaration": {
+            "name": "fastSlider",
+            "module": "src/slider/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Slider",
+          "declaration": {
+            "name": "Slider",
+            "module": "src/slider/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "sliderStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/slider/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/slider/slider.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Slider"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/slider/slider.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Slider",
+          "declaration": {
+            "name": "Slider",
+            "module": "src/slider/slider.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "sliderStyles",
+          "parameters": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "definition"
+            }
+          ],
+          "description": "Styles for Slider",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "sliderStyles",
+          "declaration": {
+            "name": "sliderStyles",
+            "module": "src/slider/slider.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/slider/slider.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/slider/slider.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/slider-label/index.ts",
       "declarations": [
         {
@@ -8658,129 +10968,6 @@
           "name": "default",
           "declaration": {
             "module": "src/slider-label/slider-label.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastSlider",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#Slider} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#sliderTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastSlider",
-          "declaration": {
-            "name": "fastSlider",
-            "module": "src/slider/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Slider",
-          "declaration": {
-            "name": "Slider",
-            "module": "src/slider/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "sliderStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/slider/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/slider/slider.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "Slider"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/slider/slider.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Slider",
-          "declaration": {
-            "name": "Slider",
-            "module": "src/slider/slider.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "sliderStyles",
-          "parameters": [
-            {
-              "name": "context"
-            },
-            {
-              "name": "definition"
-            }
-          ],
-          "description": "Styles for Slider",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "sliderStyles",
-          "declaration": {
-            "name": "sliderStyles",
-            "module": "src/slider/slider.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/slider/slider.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/slider/slider.vscode.definition.ts"
           }
         }
       ]
@@ -9732,6 +11919,135 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/tooltip/index.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "fastTooltip",
+          "description": "A function that returns a {@link @microsoft/fast-foundation#Tooltip} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#tooltipTemplate}",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "fastTooltip",
+          "declaration": {
+            "name": "fastTooltip",
+            "module": "src/tooltip/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Tooltip",
+          "declaration": {
+            "name": "Tooltip",
+            "module": "src/tooltip/index.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "tooltipStyles",
+          "declaration": {
+            "name": "styles",
+            "module": "src/tooltip/index.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tooltip/tooltip.open-ui.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/tooltip/tooltip.open-ui.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tooltip/tooltip.stories.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Tooltip"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/tooltip/tooltip.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Tooltip",
+          "declaration": {
+            "name": "Tooltip",
+            "module": "src/tooltip/tooltip.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tooltip/tooltip.styles.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "tooltipStyles",
+          "parameters": [
+            {
+              "name": "context",
+              "type": {
+                "text": "ElementDefinitionContext"
+              }
+            },
+            {
+              "name": "definition",
+              "type": {
+                "text": "FoundationElementDefinition"
+              }
+            }
+          ],
+          "description": "Styles for Tooltip",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "tooltipStyles",
+          "declaration": {
+            "name": "tooltipStyles",
+            "module": "src/tooltip/tooltip.styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/tooltip/tooltip.vscode.definition.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/tooltip/tooltip.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/tree-item/index.ts",
       "declarations": [
         {
@@ -9870,173 +12186,6 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/tooltip/index.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "fastTooltip",
-          "description": "A function that returns a {@link @microsoft/fast-foundation#Tooltip} registration for configuring the component with a DesignSystem. Implements {@link @microsoft/fast-foundation#tooltipTemplate}",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "fastTooltip",
-          "declaration": {
-            "name": "fastTooltip",
-            "module": "src/tooltip/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Tooltip",
-          "declaration": {
-            "name": "Tooltip",
-            "module": "src/tooltip/index.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "tooltipStyles",
-          "declaration": {
-            "name": "styles",
-            "module": "src/tooltip/index.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tooltip/tooltip.open-ui.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/tooltip/tooltip.open-ui.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tooltip/tooltip.stories.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "Tooltip"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/tooltip/tooltip.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Tooltip",
-          "declaration": {
-            "name": "Tooltip",
-            "module": "src/tooltip/tooltip.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tooltip/tooltip.styles.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "tooltipStyles",
-          "parameters": [
-            {
-              "name": "context",
-              "type": {
-                "text": "ElementDefinitionContext"
-              }
-            },
-            {
-              "name": "definition",
-              "type": {
-                "text": "FoundationElementDefinition"
-              }
-            }
-          ],
-          "description": "Styles for Tooltip",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "tooltipStyles",
-          "declaration": {
-            "name": "tooltipStyles",
-            "module": "src/tooltip/tooltip.styles.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tooltip/tooltip.vscode.definition.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/tooltip/tooltip.vscode.definition.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/utilities/behaviors.ts",
-      "declarations": [
-        {
-          "kind": "function",
-          "name": "appearanceBehavior",
-          "parameters": [
-            {
-              "name": "value",
-              "type": {
-                "text": "string"
-              },
-              "description": "The value of the appearance property"
-            },
-            {
-              "name": "styles",
-              "type": {
-                "text": "ElementStyles"
-              },
-              "description": "The styles to be applied when condition matches"
-            }
-          ],
-          "description": "Behavior that will conditionally apply a stylesheet based on the elements\nappearance property",
-          "privacy": "public"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "appearanceBehavior",
-          "declaration": {
-            "name": "appearanceBehavior",
-            "module": "src/utilities/behaviors.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/tree-view/index.ts",
       "declarations": [
         {
@@ -10154,6 +12303,44 @@
           "name": "default",
           "declaration": {
             "module": "src/tree-view/tree-view.vscode.definition.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/utilities/behaviors.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "appearanceBehavior",
+          "parameters": [
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "description": "The value of the appearance property"
+            },
+            {
+              "name": "styles",
+              "type": {
+                "text": "ElementStyles"
+              },
+              "description": "The styles to be applied when condition matches"
+            }
+          ],
+          "description": "Behavior that will conditionally apply a stylesheet based on the elements\nappearance property",
+          "privacy": "public"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "appearanceBehavior",
+          "declaration": {
+            "name": "appearanceBehavior",
+            "module": "src/utilities/behaviors.ts"
           }
         }
       ]
